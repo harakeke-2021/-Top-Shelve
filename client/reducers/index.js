@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux'
-import cookies from './cookies'
+import shelf from './shelf'
+import cookie from './cookie'
 
 export default combineReducers({
-  cookies
+  shelf,
+  cookie
 })
