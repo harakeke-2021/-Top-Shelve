@@ -1,13 +1,18 @@
 import { ADD_TO_SHELF } from '../actions/cookies'
 
-function cookies (state = [], action) {
+const testcookies = [
+  { base: 'plain', toppings: [] },
+  { base: 'shortbread', toppings: [] },
+]
+
+function cookies(state = testcookies, action) {
   switch (action.type) {
     case ADD_TO_SHELF:
       return [
         ...state,
         {
-          cookies: action.cookies
-        }
+          cookies: action.cookies,
+        },
       ]
 
     default:
