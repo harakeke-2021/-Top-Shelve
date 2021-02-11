@@ -1,12 +1,13 @@
 import React from 'react'
 
-import Learners from './Learners'
+import CookieBase from './CookieBase'
+import CookieList from './CookieList'
+import CookieMaker from './CookieMaker'
 
-const App = () => {
+function App() {
   return (
     <>
-      <h1>Learners Rock!</h1>
-      <Learners />
+      <CookieList />
     </>
   )
 }
