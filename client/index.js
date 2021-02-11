@@ -1,8 +1,10 @@
 import React from 'react'
 import { HashRouter as Router } from 'react-router-dom'
 import { render } from 'react-dom'
-import { createStore } from 'redux'
+
+// REDUX
 import { Provider } from 'react-redux'
+import { createStore } from 'redux'
 
 import reducers from './reducers'
 import App from './components/App'
