@@ -3,6 +3,8 @@ import { HashRouter as Router } from 'react-router-dom'
 import { render } from 'react-dom'
 import { createStore } from 'redux'
 
+// REDUX
+import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import reducers from './reducers'
