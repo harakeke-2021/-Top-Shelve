@@ -1,5 +1,82 @@
+
+
+*{box-sizing: border-box}
+
+body{
+  background-color: #0471A6;
+  
+}
+
 h1{
   color:red;
   text-align: center;
+  font-size: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: 700px;
+  letter-spacing: 2px;
 
 }
+
+img{ 
+  width: 100%; 
+  max-width: 100%;
+}
+
+.container{ 
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  /* align-items: center; */
+
+}
+
+aside{ 
+  flex: 1;
+  border: 1px solid #000;
+}
+
+main{ 
+flex: 2;
+border: 1px solid #000;
+flex-grow: 5;
+
+}
+
+.cookie-made-container{ 
+  background-color: #A8D0DB;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* overflow: hidden; */
+  /* align-items: center; */
+
+}
+
+.cookie-base-container{ 
+  margin-top: 150px;
+  margin-bottom: 0px;
+  border: 1px solid #000;
+  flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.cookie-item{ 
+  margin:20px auto;
+  height: 80px; 
+  width: 80px;
+  background-color: seagreen;
+  border-radius: 50%;
+}
+
+.cookie-item1{ 
+  margin:20px 15px;
+  height: 150px; 
+  width: 150px;
+  background-color: rgb(130, 230, 173);
+  border-radius: 50%;
+  
+}
+
