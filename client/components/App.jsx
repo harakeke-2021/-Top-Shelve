@@ -1,12 +1,16 @@
 import React from 'react'
+import { Route, Link } from 'react-router-dom'
 
-import Learners from './Learners'
+import CookieBase from './CookieBase'
+import CookieList from './CookieList'
+import CookieMaker from './CookieMaker'
+import CssSetup from './CssSetup'
 
-const App = () => {
+function App() {
   return (
     <>
-      <h1>Learners Rock!</h1>
-      <Learners />
+    <Route path={'/css'} component={CssSetup}/>
+      <CookieList />
     </>
   )
 }
