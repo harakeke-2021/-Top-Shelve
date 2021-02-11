@@ -9,7 +9,8 @@ import CssSetup from './CssSetup'
 function App() {
   return (
     <>
-    <Route path={'/css'} component={CssSetup}/>
+      <CookieBase />
+      <Route path={'/css'} component={CssSetup} />
       <CookieList />
     </>
   )
