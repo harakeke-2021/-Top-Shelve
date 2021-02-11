@@ -1,8 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { BrowserRouter as Router } from 'react-router-dom'
-import { createStore, applyMiddleware, compose } from 'redux'
 
+import { BrowserRouter as Router } from 'react-router-dom'
+
+// REDUX
+import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 
 import reducers from './reducers'
