@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
-function CookieBase () {
+
+function CookieBase (props) {
   const cookies = ['plain', 'shortbread', 'peanutbutter', 'chocolate']
-  const [selectedBase, setSelectedBase] = useState('')
+
+  function clickHandler (cookie) {
+    props.base(cookie)
+    props.page('maker')
+  }
 
   return (
     <main>
@@ -11,7 +16,7 @@ function CookieBase () {
         {cookies.map((cookie) => {
           return (
             <img
-              onClick={() => setSelectedBase(cookie)}
+              onClick={() => clickHandler(cookie)}
               key={cookie}
               className='cookie'
               src={`/${cookie}.png`}></img>
