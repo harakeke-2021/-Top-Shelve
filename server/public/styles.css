@@ -3,19 +3,24 @@
 *{box-sizing: border-box}
 
 body{
-  background-color: #0471A6;
+  background-color: seashell;
   
 }
 
 h1{
-  color:red;
+  color:#6E2700;
   text-align: center;
   font-size: 40px;
   font-family: 'Poppins', sans-serif;
+  align-self: flex-start;
   font-style: italic;
   font-weight: 700px;
   letter-spacing: 2px;
 
+}
+
+.made-cookie-title{
+  color: white
 }
 
 img{ 
@@ -27,7 +32,7 @@ img{
   display: flex;
   height: 100vh;
   justify-content: center;
-  /* align-items: center; */
+  align-items: center;
 
 }
 
@@ -53,12 +58,13 @@ flex-grow: 5;
 }
 
 .cookie-base-container{ 
-  margin-top: 150px;
+  /* margin-top: 150px; */
   margin-bottom: 0px;
   border: 1px solid #000;
   flex-wrap: nowrap;
   display: flex;
   justify-content: center;
+ 
 
   
 }
