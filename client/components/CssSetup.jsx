@@ -5,7 +5,7 @@ export default function CssSetup () {
     <div className="container">
       {/* <aside> */}
       <div className="cookie-made-container">
-        <h1>Cookies</h1>
+        <h1 className="made-cookie-title">Cookies</h1>
         <div className="cookie-item"></div>
         <div className="cookie-item"></div>
         <div className="cookie-item"></div>
