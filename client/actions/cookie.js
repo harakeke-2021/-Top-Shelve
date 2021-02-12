@@ -21,6 +21,6 @@ export function initializeCookie (base) {
   return {
     type: INITIALIZE_COOKIE,
     base
-    
+
   }
 }
