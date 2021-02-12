@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { connect } from 'react-redux'
 
-function CookieList(props) {
+function CookieList (props) {
   const cookies = props.cookie
   console.log(props.cookie)
   return (
-    <div className='cookie-list'>
-      <h5>Cookie List</h5>
+    <aside>
+      <h5 className="list-title">Cookie List</h5>
       {cookies.map((cookie) => {
         return (
           <div key={cookie} className='cookie'>
@@ -14,13 +14,13 @@ function CookieList(props) {
           </div>
         )
       })}
-    </div>
+    </aside>
   )
 }
 
-function mapStateToProps(state) {
+function mapStateToProps (state) {
   return {
-    cookie: state.cookie,
+    cookie: state.cookie
   }
 }
 

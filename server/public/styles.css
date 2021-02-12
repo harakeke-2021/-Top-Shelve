@@ -24,8 +24,10 @@ h1{
 }
 
 img{ 
-  width: 100%; 
-  max-width: 100%;
+  height: 100px;
+  width: 100px;
+  /* width: 100%; 
+  max-width: 100%; */
 }
 
 .container{ 
@@ -41,12 +43,22 @@ aside{
   border: 1px solid #000;
 }
 
+.aside{ 
+  flex: 1;
+  border: 1px solid #000;
+}
+
 main{ 
 flex: 2;
 border: 1px solid #000;
 flex-grow: 5;
-
 }
+
+.main{ 
+  flex: 2;
+  border: 1px solid #000;
+  flex-grow: 5;
+  }
 
 .cookie-made-container{ 
   background-color: #A8D0DB;
@@ -63,10 +75,7 @@ flex-grow: 5;
   border: 1px solid #000;
   flex-wrap: nowrap;
   display: flex;
-  justify-content: center;
- 
-
-  
+  justify-content: center;  
 }
 
 .cookie-item{ 

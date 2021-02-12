@@ -6,12 +6,17 @@ import CookieList from './CookieList'
 import CookieMaker from './CookieMaker'
 import CssSetup from './CssSetup'
 
-function App() {
+function App () {
   return (
     <>
-      <CookieBase />
-      <Route path={'/css'} component={CssSetup} />
-      <CookieList />
+      {/* <Route exactPath={'/css'} component={CssSetup} /> */}
+
+      <div className="container">
+        
+        <CookieList />
+        <CookieBase />
+
+      </div>
     </>
   )
 }
