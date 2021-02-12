@@ -1,0 +1,125 @@
+.chatbot-wrapper {
+  display: flex;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 33%;
+  min-height: 29em;
+  width: 25%;
+  min-width: 15em;
+  justify-content: center;
+}
+
+.chatbot {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 1em;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  bottom: 0em;
+  height: calc(100% - 4em);
+  min-height: 25em;
+}
+
+.chatbot-body {
+  padding: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  overflow: hidden;
+  height: calc(100% - 8em);
+}
+
+.chatbot-icon {
+  background-image: url('../images/clippyp.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+  max-width: 10em;
+  max-height: 10em;
+  position: absolute;
+  top: 0px;
+  left: -2em;
+  z-index: 1;
+}
+
+.chatbot-header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 3em;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: calc(100% - 0em);
+  /* above same as padding */
+  padding: 1em;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  align-content: center;
+  justify-content: right;
+  justify-items: right;
+}
+
+.chatbot-name {
+  position: relative;
+  left: 4em;
+  flex: 1;
+  margin-right: 0.5em;
+  font-size: 1.5em;
+}
+
+.chatbot-text {
+  /* height: 300px; */
+  display: flex;
+  height: auto;
+  margin-bottom: 0.5em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /* flex-direction: column-reverse; */
+}
+
+.chatbot-text.line {
+  overflow: hidden;
+  width: calc(100% - 0em);
+}
+
+.chatbot-input {
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; */
+  position: absolute;
+  width: calc(100% - 3em);
+  margin: 1.5em auto;
+  bottom: 0px;
+}
+
+.chatbot-wrapper .close {
+  position: absolute;
+  top: 0px;
+  font-size: 0.66rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border-radius: 50%;
+  opacity: 0;
+}
+
+.chatbot-text::-webkit-scrollbar {
+  display: none;
+}
+
+.chatbot-text {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.chatbot-wrapper:hover .close {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
